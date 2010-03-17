@@ -156,10 +156,10 @@ package com.plupload {
 						}
 
 						// Force at least 4 chunks to fake progress
-						if (chunks < 4) {
+						/*if (chunks < 4) {
 							chunkSize = Math.ceil(file._size / 4);
 							chunks = 4;
-						}
+						}*/
 
 						// Start uploading the scaled down image
 						file._multipart = multipart;
@@ -175,10 +175,10 @@ package com.plupload {
 					loader.loadBytes(file._fileRef.data);
 				} else {
 					// Force at least 4 chunks to fake progress
-					if (chunks < 4) {
+					/*if (chunks < 4) {
 						chunkSize = Math.ceil(file._size / 4);
 						chunks = 4;
-					}
+					}*/
 
 					file._multipart = multipart;
 					file._chunking = chunking;
